@@ -1,4 +1,5 @@
 # 根目录下index.html 是页面的入口文件，
+```
 |--client             前端文件  <br />
 |  --js               存放js 的文件  <br />
 |    --chat.js        处理websocket 连接server， socket信息处理, 挂载  <br />
@@ -15,5 +16,6 @@
 |--LICENSE            (MIT License 开源规则)  <br />
 |--package.json  <br />
 |--README.md  <br />
+```
   
 # /server/index.js 是服务器的入口文件 运行命令是 npm run dev
