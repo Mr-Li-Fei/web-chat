@@ -1,0 +1,23 @@
+{
+  "name": "web-chat",
+  "version": "1.0.0",
+  "description": "web chat",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mr-Li-Fei/web-chat.git"
+  },
+  "keywords": [
+    "chat",
+    "websocket"
+  ],
+  "author": "superFei",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mr-Li-Fei/web-chat/issues"
+  },
+  "homepage": "https://github.com/Mr-Li-Fei/web-chat#readme"
+}

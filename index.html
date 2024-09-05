@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web chat login</title>
+    <style>
+        .app{
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            border: 1px solid #000;
+            width: 100%;
+            height: 100%;
+            color: aliceblue;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+            background-image:url('./static/images/loginbg.gif');
+            background-repeat: no-repeat;
+            background-size: cover;
+            & .account{
+                width: 30%;
+                min-width: 260px;
+                & div{
+                    width: 100%;
+                    min-width: 255px;
+                    height: 50px;
+                    margin-bottom: 5px;
+                    & text{
+                        display: inline-block;
+                        width: 30%;
+                        height: 50px;
+                        text-align: right;
+                        color: aliceblue;
+                    }
+                    & input{
+                        height: 30px;
+                    }
+                }
+            }
+
+            & .loginBtn {
+                width: 30%;
+                height: 50px;
+                text-align: center;
+            }
+        }
+
+        /* td {
+            text-align: right;
+        } */
+    
+    </style>
+</head>
+<body>
+    <div class="app">
+        <div class="account">
+            <div>
+                <text class="namelabel">Name: </text>
+                <input class="nameinput" id="username" type="text" />
+            </div>
+            <div>
+                <text>Password: </text>
+                <input type="password" />
+            </div>
+        </div>
+        <div class="loginBtn">
+            <input type="button" id="enterBtn" onclick="login()" value="Login">
+        </div>
+
+        <!-- table 实现登录页面 -->
+        <!-- <table>
+            <tr>
+                <td><text class="namelabel">Name: </text></td>
+                <td><input class="nameinput" type="text" /></td>
+            </tr>
+            <tr>
+                <td><text>Password: </text></td>
+                <td><input type="password" /></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <button onclick="login()">Login</button>
+                </td>
+            </tr>
+        </table> -->
+    </div>
+
+    <script src="./client/js/index.js">
+        function login() {
+            console.log('run');
+        }
+    </script>
+</body>
+</html>
