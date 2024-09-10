@@ -15,6 +15,15 @@
 |  --package-lock.json   
 |  --package.json   
 |--static             放了一个登录页面的背景图（不展开叙述）  
+|--wss                实现websocket 的wss 的链接
+|  --certs            存放证书，私钥等
+|  --node_modules     
+|  --client.html      前端页面， 浏览器打开，发送wss 的请求链接   
+|  --http.js          创建http server 测试， 无关项目
+|  --https.js         创建https server 测试， 无关项目
+|  --package-lock.json 
+|  --package.json
+|  --server.js        在https基础上创建的websocket server , 
 |--index.html         重写的登录页面  
 |--LICENSE            (MIT License 开源规则)  
 |--package.json  
@@ -31,5 +40,8 @@
 # 未实现的功能
 1. 聊天室。 就是存储每个连接的ws 实例， 遍历发送信息（广播）
 2. 页面修饰。 聊天页面没有进行精细的打磨，美化
+
+# wss 文件夹
+简单尝试实现了在https基础上创建websocket server
 
 # 待续......
