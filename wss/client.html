@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wss</title>
+</head>
+<body>
+    <div>
+        <div>打开这个页面的就会链接websocket </div>
+    </div>
+    <script>
+        const wss = new WebSocket('wss://localhost:8080/');
+        wss.onopen = handleOpen;
+        wss.onmessage = handleMessage;
+        wss.onerror = handleError;
+        wss.onclose = handleClose;
+
+        function handleOpen() {
+            console.log('open');
+            wss.send('Hi!');
+        }
+        function handleMessage() {
+            console.log('message');
+        }
+        function handleError(error) {
+            console.log('error', error);
+        }
+        function handleClose(error) {
+            console.log('close', error);
+        }
+        function onConnect() {
+            // TODO::...
+        }
+    </script>
+</body>
+</html>
